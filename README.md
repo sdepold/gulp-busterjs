@@ -1,4 +1,4 @@
-# gulp-busterjs
+# gulp-busterjs [![Build Status](https://travis-ci.org/sdepold/gulp-busterjs.svg?branch=v1.0.1)](https://travis-ci.org/sdepold/gulp-busterjs)
 
 This module allows you to run your [BusterJS](http://docs.busterjs.org) tests
 with [gulp](http://gulpjs.com). It will also replace your configuration file
