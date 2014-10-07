@@ -11,6 +11,7 @@
   "dependencies": {
     "buster": "^0.7.14",
     "gulp-util": "^3.0.1",
+    "resolve": "^1.0.0",
     "through": "^2.3.6"
   },
   "directories": {
