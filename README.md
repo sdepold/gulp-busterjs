@@ -20,13 +20,51 @@ Using the module is as simple as that:
 ```js
 "use strict";
 
-var path   = require("path");
 var gulp   = require("gulp");
 var buster = require("gulp-busterjs");
 
 gulp.task("test", function () {
   gulp
-    .src(path.resolve(__dirname, "test", "**", "*-test.js"))
+    .src("./test/**/*-test.js")
     .pipe(buster());
+});
+```
+
+If you want to run different buster configurations separated from each other
+you can also do this:
+
+```js
+"use strict";
+
+var gulp   = require("gulp");
+var buster = require("gulp-busterjs");
+
+gulp.task("test", ["test-unit", "test-integration"], function () {});
+
+gulp.task("test-unit", function () {
+  gulp
+    .src("./test/unit/**/*-test.js")
+    .pipe(buster({ name: "unit" }));
+});
+
+gulp.task("test-integration", function () {
+  gulp
+    .src("./test/integration/**/*-test.js")
+    .pipe(buster({ name: "integration" }));
+});
+```
+
+You can also pass additional options to the buster function:
+
+```js
+gulp.task("test", function () {
+  gulp
+    .src("./test/**/*-test.js")
+    .pipe(buster({
+      name:        "my lovely configuration name", // default: "testrun 123"
+      environment: "browser",                      // default: "node"
+      rootPath:    "my/tests",                     // default: process.cwd()
+      tests:       []                              // default: the gulp files
+    }));
 });
 ```
