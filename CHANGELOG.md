@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 1.1.1 - 2014-10-20
+### Changes
+- Fix serial buster runs
+
 ## 1.1.0 - 2014-10-11
 ### Added
 - Possibility to define buster configurations
