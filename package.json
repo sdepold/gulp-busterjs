@@ -1,6 +1,6 @@
 {
   "name": "gulp-busterjs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "BusterJS runner for gulp",
   "main": "lib/gulp-buster.js",
   "scripts": {
