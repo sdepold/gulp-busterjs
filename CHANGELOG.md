@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 1.1.3 - 2015-01-22
+### Fixed
+- Erroneous buster calls are now correctly resulting in an error either 
+
 ## 1.1.2 - 2014-11-07
 ### Changes
 - Fix timeout handling
