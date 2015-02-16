@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 1.2.1 - 2015-02-16
+### Changed
+- Fixed error detection
+
 ## 1.2.0 - 2015-02-16 
 ### Added
 - Option to ignore stderr
