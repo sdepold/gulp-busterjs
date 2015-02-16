@@ -61,10 +61,11 @@ gulp.task("test", function () {
   gulp
     .src("./test/**/*-test.js")
     .pipe(buster({
-      name:        "my lovely configuration name", // default: "testrun 123"
-      environment: "browser",                      // default: "node"
-      rootPath:    "my/tests",                     // default: process.cwd()
-      tests:       []                              // default: the gulp files
+      name:         "my lovely configuration name", // default: "testrun 123"
+      environment:  "browser",                      // default: "node"
+      rootPath:     "my/tests",                     // default: process.cwd()
+      tests:        [],                             // default: the gulp files
+      failOnStderr: false                           // default: true
     }));
 });
 ```
