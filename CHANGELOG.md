@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## Upcoming 
+### Added
+- Option to ignore stderr
+- Integration tests
+- Improve error detection
+
+### Changed
+- JSHint configuration
+
 ## 1.1.3 - 2015-01-22
 ### Fixed
 - Erroneous buster calls are now correctly resulting in an error either 
