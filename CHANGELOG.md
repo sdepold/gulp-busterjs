@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## Upcoming
+### Added
+- Possibility to transform arguments that are passed to the spawn call.
+
 ## 1.2.1 - 2015-02-16
 ### Changed
 - Fixed error detection

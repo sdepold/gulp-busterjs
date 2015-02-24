@@ -65,7 +65,10 @@ gulp.task("test", function () {
       environment:  "browser",                      // default: "node"
       rootPath:     "my/tests",                     // default: process.cwd()
       tests:        [],                             // default: the gulp files
-      failOnStderr: false                           // default: true
+      failOnStderr: false,                          // default: true
+      transformSpawnArgs: function (args) {
+        return args;
+      }
     }));
 });
 ```
