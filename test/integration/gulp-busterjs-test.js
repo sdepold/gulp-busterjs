@@ -13,6 +13,11 @@ describe('gulp-busterjs', function () {
     expect(result.stdout).not.toContain('Buster failed.');
   });
 
+  it('fails if the test cannot require some files', function () {
+    var result = helper.runTest('require-failed-test.js');
+    expect(result.stdout).toContain('Buster failed.');
+  });
+
   it('fails if stdout prints the runtime error', function () {
     var result = helper.runTest('runtime-test.js');
     expect(result.stdout).toContain('Buster failed.');
