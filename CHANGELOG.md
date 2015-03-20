@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## Upcoming
+## v1.3.2 - 2015-03-20
 ### Added
 - Error handling for erroneous require statements
 
