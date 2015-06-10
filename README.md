@@ -66,6 +66,7 @@ gulp.task("test", function () {
       rootPath:     "my/tests",                     // default: process.cwd()
       tests:        [],                             // default: the gulp files
       failOnStderr: false,                          // default: true
+      useHeadlessBrowser: true,                     // default: false. Will spawn a headless phantom browser before running the tests.
       transformSpawnArgs: function (args) {
         return args;
       }
