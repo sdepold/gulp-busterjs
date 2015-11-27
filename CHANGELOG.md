@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v1.5.0 - 2015-11-27
+### Changed
+- Update dependencies
+- Respect the exit code of buster instead of parsing the output
+
 ## v1.4.0 - 2015-06-10
 ### Added
 - Possibility to spawn a headless browser
