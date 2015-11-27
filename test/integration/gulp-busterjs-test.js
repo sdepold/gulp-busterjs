@@ -18,8 +18,8 @@ describe('gulp-busterjs', function () {
     expect(result.stdout).toContain('Buster failed.');
   });
 
-  it('fails if stdout prints the runtime error', function () {
-    var result = helper.runTest('runtime-test.js');
+  it('fails if with a failing test', function () {
+    var result = helper.runTest('failing-test.js');
     expect(result.stdout).toContain('Buster failed.');
   });
 });
